@@ -39,7 +39,7 @@ public class ModPusula extends ModDraggable {
 	
 	@Override
 	public void renderDummy(ScreenPosition pos) {
-		if(BlackClient.ModPusula) {
+		if(ModInstances.getModPusula().isEnabled()) {
         int direction = MathHelper.floor_double((double) (mc.thePlayer.rotationYaw * 256.0F / 360.0F) + 0.5D) & 255;
         int yBase = getY(1, 12);
         int xBase = getX(65);
